@@ -1,0 +1,308 @@
+/* GLOBAL STYLES */ 
+
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400); */
+
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+    color: #F1F1F1;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+h1, h2, h3{
+    margin: 0px;
+    padding: 0px;
+    color: #8DC63F; /* THIS COLOR IS LIME GREEN */
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    line-height: 115%;
+    margin: 15px 0px;
+}
+
+ul{
+    padding: 0px;
+    list-style: none; /* GETS RID OF BULLETS */
+}
+
+strong, b{
+    color: #8DC63F; /* THIS COLOR IS LIME GREEN */
+}
+
+a{
+    color: #0099FF;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF7900; /* MY SECOND COLOR IS ORANGE */
+}
+
+.container {
+    overflow: hidden;
+    margin: 0px auto;
+    width: 1200px;
+}
+
+/* HEADER SECTION BEGINS HERE */
+
+#header{
+    position: relative;
+    padding: 15px 0px;
+}
+
+#logo a{
+    color: #0033CC;
+}
+
+#logo a:hover{
+    color: #0033CC;
+}
+
+#menu{
+    position: absolute;
+    top: 2em;
+    right: 5%;
+}
+
+#menu ul{
+	display: inline-block;
+}
+
+#menu li{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li:after{
+	content: "|";
+	padding: 16px 20px;
+	font-weight: 500;
+	color: rgb(255,102,0,);
+}
+
+#menu li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: 600;
+	color: rgb(255,102,0,);
+}
+
+#menu li:hover a, #menu li.active a {
+	color: rgb(255,121,0);
+}
+
+#menu ul li.active{
+	color: rgb(255,102,0);
+}
+
+#menu li.first::before{
+	content: "|";
+}
+
+/* BANNER SECTION BEGNS HERE */
+
+#banner {
+	overflow: hidden;
+	padding: 125px 0px;
+	border-top: 3px solid #0099FF;
+	background-size: cover;
+	background:url('../images/Unknown-1.jpeg') no-repeat center;
+	background-size: cover;
+	height:300px;
+	background-color:#FF7900;
+}
+
+#bannerAbout {
+	overflow: hidden;
+	padding: 45px 0px;
+	border-top: 3px solid #0099FF;
+	background-size: cover;
+	background-color: blue;
+}
+
+#bannerContact {
+	overflow: hidden;
+	padding: 45px 0px;
+	border-top: 3px solid #0099FF;
+	background-size: cover;
+	background-color: rgb(255, 51, 204); /*THIS COLOR IS PINK*/
+}
+
+#bannerTitle{
+	color: #FFFFFF;
+	font-size: 8em;
+}
+
+/* BUTTON STYLES START HERE */
+
+a.button{
+	display:inline-block;
+	padding: 10px 15px;
+	background-color: #0099FF;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 10px;
+	margin: 10px 0px 10px 0px;
+	color: #FFFFFF;
+	/* font-family: 'Open Sans', sans-serif; */
+}
+
+a.button:hover{
+	background-color: #0033CC;
+}
+
+/* OUR THREE COLUMNS SECTION */
+.boxA, .boxB, .boxC {
+	width: 384px;
+}
+
+.boxA h2, .boxB h2, .boxC h2{
+	font-weight: 700;
+	font-size: 3em;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.boxA p, .boxB p, .boxC p {
+	padding: 0px 12px;  /*CHANGE THE ATTRIBUTES FOR P TAGS HERE*/
+	color: #FFFFFF;
+}
+
+.boxA, .boxB{
+	float: left;
+	margin-right: 24px;	
+}
+
+.boxC{
+	float: left;
+}
+
+.box span {
+	background-color: #0099FF;
+	color: #FFFFFF;
+	display: block;
+	font-size: 2em;
+	font-weight: 600;
+	line-height: 2.5em;
+	margin: 0px 0px 12px 0px;
+	/* padding: 1em; */
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* ABOUT SECTION */
+#featured .align-left {
+	float: left;
+	padding-top: 20px;
+	width: 384px;
+}
+
+#featured .align-right {
+	float: right;
+	width: 775px;
+	/* font-size: 1em; */
+}
+
+/* FOOTER SECTION */
+
+footer{
+	margin-top: 25px;
+	
+}
+
+#copyright {
+	overflow: hidden;
+	padding: 30px 0px;
+	border-top: 2px dotted #0099FF;
+	background-color: #E1E1E1;
+	width: 100%;
+	display: block;
+}
+
+#copyright p{
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 1.75em;
+	color: #000000;
+}
+
+#copyright a{
+	color: #8DC63F;
+}
+
+#copyright a:hover{
+	color: #0033CC;
+}
+
+.fa{
+	background-color: #8DC63F;
+	border: 3px solid #FFFFFF;
+	border-radius: 210px;
+	font-size: 40px;
+	margin: 13px;
+	color: #FFFFFF;
+	height: 28px;
+	width: 28px;
+	padding: 10px;
+}
+
+.fa-facebook{background-color: #0C516E;}
+
+.fa-twitter{background-color: #8CA6D9;}
+
+.social{
+	text-align: center;
+}
+
+.vidContainer{
+	width: 90%;
+	margin: 20px auto;
+}
+
+#videoHolder{
+	width: 100%;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0px;
+	overflow: hidden;
+}
+
+#videoHolder iframe, .video-container objects, .video-container embed{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#contactForm{
+	background-color: #FFFFFF;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	padding: 23px;
+	margin: 25px 0px 25px 0px;
+}
+
+#address{
+	float: left;
+	margin: 0px 100px 0px 0px;
+}
+
+#phone{
+	float: left;
+}
